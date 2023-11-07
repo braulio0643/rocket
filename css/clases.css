@@ -1,0 +1,233 @@
+
+
+
+.logoHeader{
+    width: 180px;
+    height: 130px;
+    position: absolute;
+    left:10px;
+    top:10px;
+}
+
+.logoFooter{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    left:10px;
+    bottom:20px;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.footerSect{
+    display: inline-block;
+    width:500px;
+    height:90px;
+    padding:0px 0px;
+}
+
+
+.footerSect li{
+    display: inline;
+    font-size: 1.5rem;
+    position: relative;
+    padding: 10px;
+    font-style:italic;
+}
+
+.ubicacion{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right:150px;
+    top:45px;
+}
+
+.float{
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    z-index: 1000;
+}
+
+.wpp{
+    height:30px;
+    width:30px;
+    background-color: rgb(21, 225, 21);
+    padding:10px;
+    border-radius: 50%;
+}
+
+.fb{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right:113px;
+    top:45px;
+}
+
+.ig{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right:108px;
+    top:47px;
+}
+
+.gmail{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right:165px;
+    top:46px;
+}
+
+.contacto{
+    text-align: center;
+    padding: 30px 60px;
+    display: inline-block;
+}
+
+.contacto section{
+    font-size: 1.2rem;
+    padding-left:10px;
+    padding-top:3px;
+}
+
+.textBox{
+    font-size: 1.2rem;
+    display: block;
+    padding-left:50px;
+    padding-top:3px;
+    margin:20px;
+}
+
+.textBox input{
+    text-align: center;
+}
+
+.inlineBlock{
+    padding: 50px;
+    margin: 50px;
+    display: inline-block;
+}
+
+.inline{
+    display: inline;
+}
+
+.block{
+    display: block;
+}
+
+.trabajos{
+    padding: 10px 20px;
+    margin: 10px;
+    display: block;
+}
+
+.trabajos img{
+    height: 341.516px;
+    width: 206.594;
+    padding: 3px;
+    border: groove rgb(244, 183, 64) ;
+    
+}
+
+.trabajos h2{
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.fotoInicio{
+    margin:20px 0px;
+    width:50%;
+    height:50%;
+}
+
+.textoInicio{
+    background-color: azure;
+    border: groove rgb(244, 183, 64) ;
+    margin: 20px 500px;
+    padding: 20px 10px;
+    
+}
+
+.textoInicio p{
+    font-size: 1.4rem;
+}
+
+
+.tienda{
+
+}
+
+.tienda h2{
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.producto{
+    display: inline-block;
+    
+    
+    background-color: rgb(244, 183, 64);
+    overflow: hidden;
+    /* margin:0px 10px;
+    padding:20px;
+    width:250px;
+    height:360px; */
+}
+
+
+.producto img{
+    width:250px;
+    height:250px;
+    display:block;
+    margin: 10px 0px;
+}
+
+.producto h4{
+    text-align: center;
+
+}
+
+.servicio{
+    display: inline-block;
+    padding: 20px;
+    margin: 10px 15px;
+    background-color: rgb(244, 183, 64);
+    width:320px;
+    height:592px;
+    overflow: auto;
+}
+
+.servicio h2{
+    display: block;
+    text-decoration: underline;
+}
+
+.servicio img{
+    width: 320px;
+    height: 340px;
+    display:block;
+    padding:20px 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.servicio ul{
+    margin-top:20px;
+}
+
+.servicio li{
+    margin: 0px 5px;
+}
+
+.servicio h3{
+    background-color: grey;
+    padding:10px 0px;
+}
+
