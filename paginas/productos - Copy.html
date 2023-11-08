@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicio</title>
+    <title>Productos</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Lato&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="../multimedia/favicon-32x32.png">
+    
 </head>
 <body>
     <div>
@@ -17,8 +18,8 @@
                 <ul>
                     <li><img src="../multimedia/logo.jpeg" alt="logo" class="logoHeader"></li>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li>Servicios</li>
+                    <li>Productos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="galeria.html">Galería</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
@@ -26,56 +27,19 @@
         </header>
     </div>
 
-    <main class= "centrado">
-        <h1 class="block">Servicios</h1>
-        <section class="servicio">
-            <h2 >Pintura</h2>
-            <img src="../multimedia/pintar-moto-7-pasos.jpg" alt="pintados">
-            <a href="../paginas/galeria.html#pintados"><h3 >VER TRABAJOS</h3></a>
-            <ul>
-                <li>Reparación.</li>
-                <li>Repintado.</li>
-                <li>Trabajos personalizados.</li>
-            </ul>
-            
-        </section>
+    <main class="tienda" id="tienda">
+        <h1 class="centrado">Productos</h1>
 
-        <section class="servicio">
-            <h2>Reparaciones</h2>
-            <img src="../multimedia/reparar.jpg" alt="reparaciones" >
-            <a href="../paginas/galeria.html#reparaciones"><h3 >VER TRABAJOS</h3></a>
-            <ul>
-                <li>Reparación de componentes por accidente.</li>
-                <li>Reparaciones eléctricas.</li>
-                <li>Reparación de chasis.</li>
-                <li>Reparación de llantas.</li>
-                
-            </ul>
-        </section>
+            <h2 class="centrado">Cascos</h2>
+            <div class="categoria" id="cascos"></div>
 
-        <section class="servicio">
-            <h2 >Lavado</h2>
-            <img src="../multimedia/lavado1.jpeg" alt="lavado" >
-            <a href="../paginas/galeria.html#lavados"><h3 >VER TRABAJOS</h3></a>
-            <ul>
-                <li>Mantené tu moto y conservala limpia.</li>
-            </ul>
-        </section>
+            <h2 class="centrado">Guantes</h2>
+            <div class="categoria" id="guantes"></div>
 
-        <section class="servicio">
-            <h2 >Service</h2>
-            <img src="../multimedia/service.jpeg" alt="service" >
-            <a href="../paginas/galeria.html#service"><h3 >VER TRABAJOS</h3></a>
-            <ul>
-                <li>Servicios integrales.</li>
-                <li>Mantenimiento preventivo y correctivo por kilometraje o por tiempo.</li>
-            </ul>
-        </section>
+            <h2 class="centrado">Camperas</h2>
+            <div class="categoria" id="camperas"></div>
+         
     </main>
-
-    <div class="float">
-        <a href="https://wa.me/1130606789?text=Hola!%20Quiero%20hacer%20una%20consulta%20..."><img src="../multimedia/whatspp-1076x1076.png" alt="wpp" class="wpp"> </a>
-    </div>
 
     <footer>
         <img src="../multimedia/logo.jpeg" alt="logo" class="logoFooter">
@@ -109,5 +73,10 @@
         </section>
         
     </footer>
+    
+    <script src="../js/camperas.js"></script>
+    <script src="../js/guantes.js"></script>
+    <script src="../js/cascos.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

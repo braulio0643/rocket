@@ -1,3 +1,72 @@
+*{
+    font-family: 'Lato', sans-serif;
+    padding:0;
+    margin:0;
+}
+
+body{
+    /* background-color: rgb(141, 141, 141); */
+    /*  */
+    background-color: #636a72;
+
+}
+
+
+
+header{
+    background-color: rgb(244, 183, 64);
+    text-align: center;
+    font-weight: bold;
+    position:relative;
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: rgb(244, 183, 64);
+    text-align: center;
+    position: relative;
+    margin-top: 15px;
+    bottom:0;
+    width: 100%;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight:bolder;
+    margin: 20px 0px;
+}
+
+h2{
+    font-size: 2.3rem;
+    padding-right: 10px;
+}
+
+h3{
+    font-size: 1.7rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+header li{
+    font-size: 2.5rem;
+    padding: 35px 70px;
+    display: inline-block;
+    text-decoration: dotted;
+}
+
+p{
+    text-align: center;
+}
+
 
 
 
@@ -17,9 +86,6 @@
     bottom:20px;
 }
 
-.centrado{
-    text-align: center;
-}
 
 .footerSect{
     display: inline-block;
@@ -159,9 +225,10 @@
     font-size: 1.4rem;
 }
 
-
 .tienda{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tienda h2{
@@ -169,25 +236,64 @@
     margin-bottom: 20px;
 }
 
+.categoria{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+
+
 .producto{
-    display: inline-block;
-    
-    
+    width: 450px;
+    height: 450px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     background-color: rgb(244, 183, 64);
-    overflow: hidden;
-    /* margin:0px 10px;
-    padding:20px;
-    width:250px;
-    height:360px; */
+    
+    padding: 20px 0px;
+}
+
+.container-img{
+    width:300px;
+    height:300px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-img img{
+    width:300px;
+    height:300px;
+    border-radius: 5px;
 }
 
 
-.producto img{
-    width:250px;
-    height:250px;
-    display:block;
-    margin: 10px 0px;
+.add-carrito{
+    width: 250px;
+    height:50px;
+    background-color: green;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
 }
+
+.botonCarrito{
+    width: 100px;
+    height: 100px;
+    
+
+}
+
 
 .producto h4{
     text-align: center;
