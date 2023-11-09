@@ -274,6 +274,54 @@ p{
     border-radius: 5px;
 }
 
+.carrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(244, 183, 64);
+    border-radius: 10px;
+    width: 800px;
+}
+
+.itemCarrito{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+    gap: 20px;
+}
+
+.itemCarrito img{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.precioTotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(244, 183, 64);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    width: 800px;
+}
+
+.reset{
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.confirm{
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 .add-carrito{
     width: 250px;
@@ -290,10 +338,15 @@ p{
 .botonCarrito{
     width: 100px;
     height: 100px;
-    
-
 }
 
+
+.flexCol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 
 .producto h4{
     text-align: center;

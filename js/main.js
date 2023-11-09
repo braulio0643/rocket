@@ -7,7 +7,7 @@ const cascosMoto = cascos.reduce((acc, elemento) => {
             <img class="centrado" src=${elemento.img} alt=${elemento.nombre}>
         </div>
 
-        <h4>${elemento.precio}</h4>
+        <h4>$${elemento.precio}</h4>
 
         <div class="add-carrito" id="addCasco">
             <h4> Añadir al carrito </h4>
@@ -25,7 +25,7 @@ const guantesMoto = guantes.reduce((acc, elemento) => {
             <img src=${elemento.img} alt=${elemento.nombre}>
         </div>
 
-        <h4>${elemento.precio}</h4>
+        <h4>$${elemento.precio}</h4>
 
         <div class="add-carrito" id="addGuante">
             <h4> Añadir al carrito </h4>
@@ -43,7 +43,7 @@ const camperasMoto = camperas.reduce((acc, elemento) => {
             <img class="centrado" src=${elemento.img} alt=${elemento.nombre}>
         </div>
 
-        <h4>${elemento.precio}</h4>
+        <h4>$${elemento.precio}</h4>
 
         <div class="add-carrito" id="addCampera">
             <h4> Añadir al carrito </h4>
@@ -97,3 +97,4 @@ comprarCamperas.forEach((element, index) => {
         localStorage.setItem("carro", JSON.stringify(carrito))
     })
 } )
+
