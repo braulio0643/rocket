@@ -12,6 +12,8 @@ for(let i = 0; i < carrito.length; i++){
     precioTotal += carrito[i].precio
 }
 
+
+
 const carritoDisplay = carrito.reduce((acc, elemento)=>{
     return acc + `
     <div class = "itemCarrito">   
@@ -21,7 +23,12 @@ const carritoDisplay = carrito.reduce((acc, elemento)=>{
         
     </div>
     `
-})
+}, "")
+
+console.log(carrito)
+console.log(carrito[0])
+console.log(carritoDisplay)
+
 
 document.querySelector("#carrito").innerHTML = carritoDisplay
 document.querySelector("#precioTotal").innerHTML = `
