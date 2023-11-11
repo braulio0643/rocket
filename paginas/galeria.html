@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Lato&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="../multimedia/favicon-32x32.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
 </head>
 <body>
     <div>
-        <header id = "arriba">
-            <nav>
-                <ul>
-                    <li><img src="../multimedia/logo.jpeg" alt="logo" class="logoHeader"></li>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li>Galería</li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <a href="carro.html"><img src="../multimedia/carrito.png" class = "botonCarrito" id="carroLogo"></a>
-                </ul>
-            </nav>
-        </header>
+        <header class="header">
+            <div class="logoHeader-container">
+              <img src="../multimedia/logo.jpeg" alt="logo" class="logoHeader">
+            </div>
+            <ul class="navBar">
+              <li></li>
+              <li><a href="../index.html">Inicio</li></a>
+              <li><a href="../paginas/productos.html">Productos</a></li>
+              <li><a href="../paginas/servicios.html">Servicios</a></li>
+              <li>Galería</li>
+              <li><a href="../paginas/contacto.html">Contacto</a></li>
+            </ul> 
+            <div class="botones-container">
+              <a href="../paginas/carro.html"><img class="botonCarrito" src="../multimedia/carrito-black.png" alt=""></a>
+              <img class="botonDark" src="../multimedia/dark.png" alt="">
+            </div>
+      </header>
     </div>
 
     <main>
@@ -93,37 +98,36 @@
         <a href="https://wa.me/1130606789?text=Hola!%20Quiero%20hacer%20una%20consulta%20..."><img src="../multimedia/whatspp-1076x1076.png" alt="wpp" class="wpp"> </a>
     </div>
 
-    <footer>
-        <img src="../multimedia/logo.jpeg" alt="logo" class="logoFooter">
-        <section class= "footerSect">
-            <ul>
-                <li>
-                    <img src="../multimedia/ubicacion.png" alt="ubi" class = "ubicacion">
+    <footer class="footer">
+        <div class="logoFooter-container">
+          <img src="../multimedia/logo.jpeg" alt="logo" class="logoFooter">
+        </div>
+        <div class="footerIzq">
+            <ul class="footerInfo">
+                <li class="flexRow">
+                    <img src="../multimedia/ubicacion-black.png" alt="ubi" class = "ubicacion">
                     <p>Av. Juan B Justo 2621 CABA</p>
                 </li>
 
-                <li>
-                    <img src="../multimedia/gmail.png" alt="gmail" class="gmail">
+                <li class="flexRow">
+                    <img src="../multimedia/gmail-black.png" alt="gmail" class="gmail">
                     <p>rocketmotorcycle@gmail.com</p>
                 </li>
             </ul>
-        </section>
-        
-        <section class="footerSect">
-            <ul>    
+        </div>
+        <div class="footerDer">
+            <ul class="footerInfo">    
                 <li>
-                    <img src="../multimedia/ig.png" alt="ig" class= "ig">
-                    <p> <a href="https://www.instagram.com/rocket.motorcycles/?fbclid=IwAR3CwWkrE1keLd7xq0qtKIpXtuPq5DBH2RAZ25Zr1kyN29foZXE1himJWE8">rocket.motorcycles</a></p>
+                    <img src="../multimedia/ig-black.png" alt="ig" class= "ig">
+                    <a href="https://www.instagram.com/rocket.motorcycles/?fbclid=IwAR3CwWkrE1keLd7xq0qtKIpXtuPq5DBH2RAZ25Zr1kyN29foZXE1himJWE8">rocket.motorcycles</a>
                 </li>
 
                 <li>
-                    <img src="../multimedia/fb.png" alt="fb" class="fb">
-                    <p><a href="https://www.facebook.com/profile.php?id=100069224079562">Rocket Motorcycles</a></p>
+                    <img src="../multimedia/fb-black.png" alt="fb" class="fb">
+                    <a href="https://www.facebook.com/profile.php?id=100069224079562">Rocket Motorcycles</a>
                 </li>
-                
             </ul>
-        </section>
-        
+          </div> 
     </footer>
 </body>
 </html>

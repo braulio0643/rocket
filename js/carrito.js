@@ -5,29 +5,23 @@ if(carrito){
     carrito = []
     localStorage.setItem("carro", JSON.stringify(carrito))
 }
-console.log(carrito)
+
 
 let precioTotal = 0
 for(let i = 0; i < carrito.length; i++){
     precioTotal += carrito[i].precio
 }
 
-
-
 const carritoDisplay = carrito.reduce((acc, elemento)=>{
     return acc + `
     <div class = "itemCarrito">   
         <h3> $${elemento.precio}</h3>
-        <img src= ${elemento.img}>
+        <img class= "fotoItemCarrito" src= ${elemento.img}>
         <h2> ${elemento.nombre}</h2>
-        
+        <img class= "borrarItemCarrito" id="borrarItem" src= "../multimedia/borrar.png">
     </div>
     `
 }, "")
-
-console.log(carrito)
-console.log(carrito[0])
-console.log(carritoDisplay)
 
 
 document.querySelector("#carrito").innerHTML = carritoDisplay
@@ -41,4 +35,23 @@ document.querySelector("#reset").addEventListener("click", ()=>{
     carrito = []
     localStorage.setItem("carro", JSON.stringify(carrito))
     document.querySelector("#carrito").innerHTML = ``
+    precioTotal= 0
+    document.querySelector("#precioTotal").innerHTML = `
+        <h2> $ ${precioTotal} </h2>
+        <div class= "reset" id ="reset"> <h3> Cancelar </h3>  </div>
+        <div class = "confirm" id = "confirm"> <h3> Confirmar </h3> </div>
+    `
 })
+
+
+const borrarItem = document.querySelectorAll("#borrarItem")
+
+borrarItem.forEach((element, index) => {
+    element.addEventListener("click", () => {
+        carrito.splice(index, 1)
+        localStorage.setItem("carro", JSON.stringify(carrito))
+        location.reload()      
+    })
+    
+
+} )
