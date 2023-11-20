@@ -1,0 +1,8 @@
+-carrousel en home
+-productos en oferta en home
+-fetch productos 
+- ordenar productos alfabeticamente
+-form que revise los tipos de input
+-botones del carro y dark mode desde celular
+-completar dark mode (para cada página)
+-responsiveness del carrito (se ve mal en mobile)

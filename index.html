@@ -14,27 +14,31 @@
 </head>
 
 <body>
-    <header class="header">
-          <div class="logoHeader-container">
-            <img src="multimedia/logo.jpeg" alt="logo" class="logoHeader">
-          </div>
-          <ul class="navBar">
-            <li></li>
-            <li>Inicio</li>
-            <li><a href="paginas/productos.html">Productos</a></li>
-            <li><a href="paginas/servicios.html">Servicios</a></li>
-            <li><a href="paginas/galeria.html">Galería</a></li>
-            <li><a href="paginas/contacto.html">Contacto</a></li>
-          </ul> 
-          <div class="botones-container">
-            <a href="paginas/carro.html"><img class="botonCarrito" src="multimedia/carrito-black.png" alt=""></a>
-            <img class="botonDark" src="multimedia/dark.png" alt="">
-          </div>
+    <header >
+        <div class="header" id="header">
+            <div class="bigMac">
+                <img src="multimedia/bigmac.png" alt="">
+            </div>
+            <div class="logoHeader-container">
+                <img src="multimedia/logo.jpeg" alt="logo" class="logoHeader">
+              </div>
+              <ul class="navBar" id="navBar">
+                <li>Inicio</li>
+                <li><a href="paginas/productos.html">Productos</a></li>
+                <li><a href="paginas/servicios.html">Servicios</a></li>
+                <li><a href="paginas/galeria.html">Galería</a></li>
+                <li><a href="paginas/contacto.html">Contacto</a></li>
+              </ul> 
+              <div class="botones-container">
+                <a href="paginas/carro.html"><img class="botonCarrito" src="multimedia/carrito-black.png" alt=""></a>
+                <img class="botonDark" src="multimedia/dark.png" alt="">
+            </div>
+        </div>
     </header>
 
     <main>
         <div class="inicio">
-            <h1>Bienvenido!</h1>
+            <h1  id="titulo">Bienvenido!</h1>
             <img src="multimedia/taller.png" alt="taller" class="fotoInicio">
             <!-- Me gustaría agregar un slider de imágenes acá -->
             <div class="textoInicio">
@@ -51,18 +55,18 @@
         <a href="https://wa.me/1130606789?text=Hola!%20Quiero%20hacer%20una%20consulta%20..."><img src="multimedia/whatspp-1076x1076.png" alt="wpp" class="wpp"> </a>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="logoFooter-container">
           <img src="multimedia/logo.jpeg" alt="logo" class="logoFooter">
         </div>
         <div class="footerIzq">
             <ul class="footerInfo">
-                <li class="flexRow">
+                <li>
                     <img src="multimedia/ubicacion-black.png" alt="ubi" class = "ubicacion">
                     <p>Av. Juan B Justo 2621 CABA</p>
                 </li>
 
-                <li class="flexRow">
+                <li>
                     <img src="multimedia/gmail-black.png" alt="gmail" class="gmail">
                     <p>rocketmotorcycle@gmail.com</p>
                 </li>
@@ -77,10 +81,14 @@
 
                 <li>
                     <img src="multimedia/fb-black.png" alt="fb" class="fb">
-                    <a href="https://www.facebook.com/profile.php?id=100069224079562">Rocket Motorcycles</a>
+                    <a href="https://www.facebook.com/profile.php?id=100069224079562">
+                        <p>Rocket Motorcycles</p>
+                    </a>
                 </li>
             </ul>
           </div> 
     </footer>
+    <script src="js/dark.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>

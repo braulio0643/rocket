@@ -32,7 +32,8 @@ document.querySelector("#precioTotal").innerHTML = `
 `
 
 document.querySelector("#reset").addEventListener("click", ()=>{
-    carrito = []
+
+          carrito = []
     localStorage.setItem("carro", JSON.stringify(carrito))
     document.querySelector("#carrito").innerHTML = ``
     precioTotal= 0
@@ -41,6 +42,27 @@ document.querySelector("#reset").addEventListener("click", ()=>{
         <div class= "reset" id ="reset"> <h3> Cancelar </h3>  </div>
         <div class = "confirm" id = "confirm"> <h3> Confirmar </h3> </div>
     `
+
+    
+})
+
+document.querySelector("#confirm").addEventListener("click", ()=>{
+    Swal.fire({
+        title: "Querés confirmar la compra?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Si",
+        cancelButtonText: "No"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            title: "Compra realizada exitosamente!",
+            icon: "success"
+          });
+        }
+      });
 })
 
 
@@ -55,3 +77,4 @@ borrarItem.forEach((element, index) => {
     
 
 } )
+

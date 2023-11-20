@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,47 +12,51 @@
 </head>
 <body>
     <div>
-        <header class="header">
-            <div class="logoHeader-container">
-              <img src="../multimedia/logo.jpeg" alt="logo" class="logoHeader">
+        <header>
+            <div class="header">
+                <div class="bigMac">
+                    <img src="../multimedia/bigmac.png" alt="">
+                </div>
+                <div class="logoHeader-container">
+                    <img src="../multimedia/logo.jpeg" alt="logo" class="logoHeader">
+                  </div>
+                  <ul class="navBar" id="navBar">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./galeria.html">Galería</a></li>
+                    <li>Contacto</li>
+                  </ul> 
+                  <div class="botones-container">
+                    <a href="../paginas/carro.html"><img class="botonCarrito" src="../multimedia/carrito-black.png" alt=""></a>
+                    <img class="botonDark" src="../multimedia/dark.png" alt="">
+                </div>
             </div>
-            <ul class="navBar">
-              <li></li>
-              <li><a href="../index.html">Inicio</li></a>
-              <li><a href="../paginas/productos.html">Productos</a></li>
-              <li><a href="../paginas/servicios.html">Servicios</a></li>
-              <li><a href="../paginas/galeria.html">Galería</a></li>
-              <li>Contacto</li>
-            </ul> 
-            <div class="botones-container">
-              <a href="../paginas/carro.html"><img class="botonCarrito" src="../multimedia/carrito-black.png" alt=""></a>
-              <img class="botonDark" src="../multimedia/dark.png" alt="">
-            </div>
-      </header>
+        </header>
     </div>
     
     <main>
-        <section class="centrado">
-            <div class="contacto">
-                <form method="" action="" enctype="">           
-                    <section>
-                        <h1>Contactanos</h1>
-                    </section>
+        <div class="contacto">
+            <div>
+                <form method="" action="" enctype="" class="formulario">           
+                    <div>
+                        <h1 id="titulo">Contactanos</h1>
+                    </div>
     
-                    <section>
+                    <div>
                         <label for="nombre">Nombre:</label>
                         <input type="text" required name="nombre">
-                    </section>
+                    </div>
         
-                    <section>
+                    <div>
                         <label for="telefono">Teléfono:</label>
                         <input type="text" required name="telefono">
-                    </section>
+                    </div>
         
-                    <section>
+                    <div>
                         <label for="mail">Mail:</label>
                         <input type="email" required name="mail">
-                    </section>
+                    </div>
     
                     <div class="textBox">
                         <label for="mensaje" class="block">Mandanos tu mensaje:</label>
@@ -64,10 +67,10 @@
                 </form>
             </div>
     
-            <div class="contacto">
+            <div class="">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.365871932477!2d-58.44737072380179!3d-34.5949086729575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57f9f45f1f9%3A0xb62c8aa2a6bf286e!2sRocket%20Motorcycles!5e0!3m2!1ses!2sar!4v1690420076774!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
+        </div>
     </main>
     
 
@@ -107,5 +110,6 @@
             </ul>
           </div> 
     </footer>
+    <script src="../js/nav.js"></script>
 </body>
 </html>

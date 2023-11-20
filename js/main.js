@@ -79,6 +79,10 @@ comprarCascos.forEach((element, index) => {
     element.addEventListener("click", () => {
         carrito.push(cascos[index])
         localStorage.setItem("carro", JSON.stringify(carrito))
+        Swal.fire({
+            title: "Producto agregado al carrito exitosamente",
+            icon: "success"
+        })
     })
     
 
@@ -88,6 +92,10 @@ comprarGuantes.forEach((element, index) => {
     element.addEventListener("click", () => {
         carrito.push(guantes[index])
         localStorage.setItem("carro", JSON.stringify(carrito))
+        Swal.fire({
+            title: "Producto agregado al carrito exitosamente",
+            icon: "success"
+        })
     })
 } )
 
@@ -95,6 +103,10 @@ comprarCamperas.forEach((element, index) => {
     element.addEventListener("click", () => {
         carrito.push(camperas[index])
         localStorage.setItem("carro", JSON.stringify(carrito))
+        Swal.fire({
+            title: "Producto agregado al carrito exitosamente",
+            icon: "success"
+        })
     })
 } )
 

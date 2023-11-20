@@ -7,13 +7,18 @@
 body{
     /* background-color: rgb(141, 141, 141); */
     /*  */
-    background-color: #636a72;
-
+    background-image: linear-gradient(to right, rgb(48, 48, 48),grey,rgb(48, 48, 48));
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
+.darkMode{
+    background-color:rgb(48, 48, 48) !important;
+}
 
-
-
+.darkModeText{
+    color: rgb(172, 167, 167) ;
+}
 
 
 a{
@@ -25,6 +30,8 @@ h1{
     font-size: 3rem;
     font-weight:bolder;
     margin: 20px 0px;
+    color: black;
+    text-decoration:underline;
 }
 
 h2{
@@ -33,7 +40,7 @@ h2{
 }
 
 h3{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 h4{
@@ -42,23 +49,65 @@ h4{
 
 header li{
     font-size: 2.5rem;
-    text-decoration: dotted;
+    list-style-type: none;
+    
 }
 
 li{
-    list-style-type: none;
+    
+    transition: all 1s;
+}
+
+li:hover{
+    text-decoration: underline;
+    
 }
 
 p{
     text-align: center;
 }
 
+label{
+    font-size: 1.5rem;
+}
+
+input,select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+    margin-top: 6px;
+    margin-bottom: 16px;
+   
+}
+
+input[type=submit] {
+    background-color:rgb(244, 183, 64);
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.bigMac{
+    display: flex;
+}
+
+
 .header{
     background-color: rgb(244, 183, 64);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     width: 100%;
+    padding: 10px;
+}
+
+.logoHeader-container{
+    display: none;
 }
 
 .logoHeader{
@@ -68,16 +117,21 @@ p{
     top:10px;
 }
 
+
 .navBar{
-    display: flex;
-    flex-direction: row;
+    display: none;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 100%;
 }
 
-.botones-container{
+.showMenu{
     display: flex;
+}
+
+.botones-container{
+    display: none;
     flex-direction: row;
     align-items: center;
 }
@@ -87,6 +141,8 @@ p{
     display: flex;
     flex-direction: row;   
     justify-content: space-around;
+    width: 100%;
+    padding: 10px 0px;
 }
 
 .footerIzq,.footerDer{
@@ -116,13 +172,13 @@ p{
 .footerInfo li{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    
     gap: 10px;
     align-items: center;
 }
 
 .logoFooter-container{
-    width: 1fr;
+    display: none;
 }
 
 .logoFooter{
@@ -156,28 +212,15 @@ p{
 }
 
 .contacto{
-    text-align: center;
-    padding: 30px 60px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    gap: 100px;
 }
 
-.contacto section{
-    font-size: 1.2rem;
-    padding-left:10px;
-    padding-top:3px;
-}
 
-.textBox{
-    font-size: 1.2rem;
-    display: block;
-    padding-left:50px;
-    padding-top:3px;
-    margin:20px;
-}
-
-.textBox input{
-    text-align: center;
-}
 
 .inlineBlock{
     padding: 50px;
@@ -218,18 +261,28 @@ p{
     align-items: center;
 }
 
+
 .fotoInicio{
     margin:20px 0px;
     width:50%;
     height:50%;
+    border-radius: 20px;
+    border: 5px rgb(244, 183, 64);
 }
 
 .textoInicio{
-    background-color: azure;
+    background-color:  rgb(244, 183, 64);
     border: groove rgb(244, 183, 64) ;
-    margin: 20px 500px;
-    padding: 20px 10px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    gap: 15px;
+    margin: 50px;
+    padding: 15px;
+}
+.textoInicio h2{
+    text-decoration: underline;
 }
 
 .textoInicio p{
@@ -250,8 +303,10 @@ p{
 .categoria{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
     margin-bottom: 50px;
 }
 
@@ -364,6 +419,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
 .flexRow{
     display: flex;
@@ -377,55 +433,75 @@ p{
 
 }
 
-.servicio{
-    display: inline-block;
+.servicios{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.servicios div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
     margin: 10px 15px;
     background-color: rgb(244, 183, 64);
     width:320px;
-    height:592px;
+    height:550px;
     overflow: auto;
+    gap: 15px;
 }
 
-.servicio h2{
-    display: block;
+.servicios div h2{
     text-decoration: underline;
 }
 
-.servicio img{
+.servicios div img{
     width: 320px;
     height: 340px;
-    display:block;
-    padding:20px 0px;
-    text-align: center;
     overflow: hidden;
 }
 
-.servicio ul{
-    margin-top:20px;
-}
 
-.servicio li{
-    margin: 0px 5px;
-}
-
-.servicio h3{
+.servicios div h3{
+    text-align: center;
     background-color: grey;
-    padding:10px 0px;
+    padding: 10px;
 }
 
-/*  @media screen and (min-width:992px) {
-    .logoHeader{
-        opacity: 100%;
+
+
+@media screen and (min-width:1200px) {
+    .logoHeader-container{
+        display: flex;
     }
-    .logo-container{
-        display: block !important;
-        width: 180px !important;
+    .navBar{
+        display: flex;
+        flex-direction: row;
     }
-    .cart-container{
-        width: 1/3 !important;
+    .botones-container{
+        display: flex;
     }
-    .cart-container{
-        width: 250px !important;
+    .bigMac{
+        display: none;
     }
-}  */
+    .header{
+        flex-direction: row;
+    }
+    .logoFooter-container{
+        display: block;
+    }
+    
+    .categoria{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contacto{
+        flex-direction: row;
+    }
+
+    .servicios{
+        flex-direction: row;
+    }
+}
