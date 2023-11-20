@@ -1,53 +1,22 @@
+const cascosMoto = cascos.reduce((acc, elemento) => {
+    return acc + `
+    <div class = "producto">
+        <h3 class="centrado">${elemento.nombre}</h3>
 
-fetch("../js/productos.json")
-.then( response => response.json())
-.then(productos => {
-
-    const camperasMoto = productos.camperas.reduce((acc, elemento) => {
-        return acc + `
-        <div class = "producto">
-            <h3 class="centrado">${elemento.nombre}</h3>
-    
-            <div class="container-img">
-                <img class="centrado" src=${elemento.img} alt=${elemento.nombre}>
-            </div>
-    
-            <h4>$${elemento.precio}</h4>
-    
-            <div class="add-carrito" id="addCampera">
-                <h4> Añadir al carrito </h4>
-            </div>
+        <div class="container-img">
+            <img class="centrado" src=${elemento.img} alt=${elemento.nombre}>
         </div>
-        `
-    }, "")
-    const containerCamperas = document.getElementById("camperas")
-    containerCamperas.innerHTML= camperasMoto
 
+        <h4>$${elemento.precio}</h4>
 
-    const cascosMoto = productos.cascos.reduce((acc, elemento) => {
-        return acc + `
-        <div class = "producto">
-            <h3 class="centrado">${elemento.nombre}</h3>
-    
-            <div class="container-img">
-                <img class="centrado" src=${elemento.img} alt=${elemento.nombre}>
-            </div>
-    
-            <h4>$${elemento.precio}</h4>
-    
-            <div class="add-carrito" id="addCasco">
-                <h4> Añadir al carrito </h4>
-            </div>
+        <div class="add-carrito" id="addCasco">
+            <h4> Añadir al carrito </h4>
         </div>
-        `
-    }, "")
+    </div>
+    `
+}, "")
 
-    const containerCascos = document.getElementById("cascos")
-    containerCascos.innerHTML= cascosMoto
-
-
-    
-const guantesMoto = productos.guantes.reduce((acc, elemento) => {
+const guantesMoto = guantes.reduce((acc, elemento) => {
     return acc + `
     <div class = "producto">
         <h3 class="centrado">${elemento.nombre}</h3>
@@ -65,25 +34,33 @@ const guantesMoto = productos.guantes.reduce((acc, elemento) => {
     `
 }, "")
 
+const camperasMoto = camperas.reduce((acc, elemento) => {
+    return acc + `
+    <div class = "producto">
+        <h3 class="centrado">${elemento.nombre}</h3>
 
+        <div class="container-img">
+            <img class="centrado" src=${elemento.img} alt=${elemento.nombre}>
+        </div>
 
+        <h4>$${elemento.precio}</h4>
 
+        <div class="add-carrito" id="addCampera">
+            <h4> Añadir al carrito </h4>
+        </div>
+    </div>
+    `
+}, "")
+
+const containerCascos = document.getElementById("cascos")
 const containerGuantes = document.getElementById("guantes")
+const containerCamperas = document.getElementById("camperas")
 
-
-
+containerCascos.innerHTML= cascosMoto
 
 containerGuantes.innerHTML= guantesMoto
 
-
-
-})
-
-
-
-
-
-
+containerCamperas.innerHTML= camperasMoto
 
 let carrito = localStorage.getItem("carro")
 if(carrito){
