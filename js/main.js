@@ -69,12 +69,47 @@ const guantesMoto = productos.guantes.reduce((acc, elemento) => {
 
 
 const containerGuantes = document.getElementById("guantes")
-
-
-
-
 containerGuantes.innerHTML= guantesMoto
 
+const comprarCascos = document.querySelectorAll("#addCasco")
+const comprarGuantes = document.querySelectorAll("#addGuante")
+const comprarCamperas = document.querySelectorAll("#addCampera")
+
+
+    comprarCascos.forEach((element, index) => {
+    element.addEventListener("click", () => {
+        carrito.push(productos.cascos[index])
+        localStorage.setItem("carro", JSON.stringify(carrito))
+        Swal.fire({
+            title: "Producto agregado al carrito exitosamente",
+            icon: "success"
+        })
+    })
+    
+
+} )
+
+comprarGuantes.forEach((element, index) => {
+    element.addEventListener("click", () => {
+        carrito.push(productos.guantes[index])
+        localStorage.setItem("carro", JSON.stringify(carrito))
+        Swal.fire({
+            title: "Producto agregado al carrito exitosamente",
+            icon: "success"
+        })
+    })
+} )
+
+comprarCamperas.forEach((element, index) => {
+    element.addEventListener("click", () => {
+        carrito.push(productos.camperas[index])
+        localStorage.setItem("carro", JSON.stringify(carrito))
+        Swal.fire({
+            title: "Producto agregado al carrito exitosamente",
+            icon: "success"
+        })
+    })
+} )
 
 
 })
@@ -94,42 +129,6 @@ if(carrito){
 }
 console.log(carrito)
 
-const comprarCascos = document.querySelectorAll("#addCasco")
-const comprarGuantes = document.querySelectorAll("#addGuante")
-const comprarCamperas = document.querySelectorAll("#addCampera")
 
-comprarCascos.forEach((element, index) => {
-    element.addEventListener("click", () => {
-        carrito.push(cascos[index])
-        localStorage.setItem("carro", JSON.stringify(carrito))
-        Swal.fire({
-            title: "Producto agregado al carrito exitosamente",
-            icon: "success"
-        })
-    })
-    
 
-} )
-
-comprarGuantes.forEach((element, index) => {
-    element.addEventListener("click", () => {
-        carrito.push(guantes[index])
-        localStorage.setItem("carro", JSON.stringify(carrito))
-        Swal.fire({
-            title: "Producto agregado al carrito exitosamente",
-            icon: "success"
-        })
-    })
-} )
-
-comprarCamperas.forEach((element, index) => {
-    element.addEventListener("click", () => {
-        carrito.push(camperas[index])
-        localStorage.setItem("carro", JSON.stringify(carrito))
-        Swal.fire({
-            title: "Producto agregado al carrito exitosamente",
-            icon: "success"
-        })
-    })
-} )
 
