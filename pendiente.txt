@@ -6,3 +6,4 @@
 -botones del carro y dark mode desde celular
 -completar dark mode (para cada página)
 -responsiveness del carrito (se ve mal en mobile)
+-cambiar font

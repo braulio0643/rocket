@@ -7,19 +7,38 @@
 body{
     /* background-color: rgb(141, 141, 141); */
     /*  */
-    background-image: linear-gradient(to right, rgb(48, 48, 48),grey,rgb(48, 48, 48));
+    background-image: linear-gradient(rgb(48, 48, 48),grey,rgb(48, 48, 48));
     max-width: 100%;
     overflow-x: hidden;
 }
 
-.darkMode{
-    background-color:rgb(48, 48, 48) !important;
+.darkMode,.tiendaOscura div .producto{
+    background-color:rgb(0, 0, 0) !important;
+    border-radius: 5px black !important;
+}
+
+.darkMode h1, .yellow, .darkMode li, .darkMode h2, .darkMode p, .tiendaOscura .producto h3, .tiendaOscura .producto h4, .tiendaOscura .centrado{
+    transition: all 1s;
+    color:rgb(244, 183, 64) !important;
 }
 
 .darkModeText{
     color: rgb(172, 167, 167) ;
 }
 
+.darkBackground{
+    background-image: linear-gradient(rgb(24, 23, 23),rgb(58, 58, 58),rgb(24, 23, 23));
+    transition:all 1s;
+}
+.tiendaOscura .fondoAmarillo{
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.fondoAmarillo{
+    background-color: rgb(244, 183, 64);
+    border-radius: 5px;
+    padding: 10px 5px;
+    transition: all 1s;
+}
 
 a{
     text-decoration: none;
@@ -97,6 +116,9 @@ input[type=submit] {
 }
 
 
+    
+
+
 .header{
     background-color: rgb(244, 183, 64);
     display: flex;
@@ -111,7 +133,7 @@ input[type=submit] {
 }
 
 .logoHeader{
-    width: 180px;
+    width: 130px;
     height: 130px;
     left:10px;  
     top:10px;
@@ -143,6 +165,8 @@ input[type=submit] {
     justify-content: space-around;
     width: 100%;
     padding: 10px 0px;
+
+    bottom: 0px;
 }
 
 .footerIzq,.footerDer{

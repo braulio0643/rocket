@@ -11,14 +11,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../multimedia/favicon-32x32.png">
    
 </head>
-<body>
+<body id="body">
     <header>
-        <div class="header">
+        <div class="header" id="header">
             <div class="bigMac">
                 <img src="../multimedia/bigmac.png" alt="">
             </div>
             <div class="logoHeader-container">
-                <img src="../multimedia/logo.jpeg" alt="logo" class="logoHeader">
+                <img src="../multimedia/logo.png" alt="logo" class="logoHeader">
               </div>
               <ul class="navBar" id="navBar">
                 <li><a href="../index.html">Inicio</a></li>
@@ -36,15 +36,16 @@
 
     <main>
         <div class="tienda" id="tienda">
-            <h1 class="centrado">Productos</h1>
-
-            <h2 class="centrado">Cascos</h2>
+            
+            <h1 id="titulo"class="titulo fondoAmarillo">Productos</h1>
+        
+            <h2 class="centrado fondoAmarillo">Cascos</h2>
             <div class="categoria" id="cascos"></div>
 
-            <h2 class="centrado">Guantes</h2>
+            <h2 class="centrado fondoAmarillo">Guantes</h2>
             <div class="categoria" id="guantes"></div>
 
-            <h2 class="centrado">Camperas</h2>
+            <h2 class="centrado fondoAmarillo">Camperas</h2>
             <div class="categoria" id="camperas"></div>
         </div>
     </main>
@@ -54,9 +55,9 @@
         <a href="https://wa.me/1130606789?text=Hola!%20Quiero%20hacer%20una%20consulta%20..."><img src="../multimedia/whatspp-1076x1076.png" alt="wpp" class="wpp"> </a>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="logoFooter-container">
-          <img src="../multimedia/logo.jpeg" alt="logo" class="logoFooter">
+          <img src="../multimedia/logo.png" alt="logo" class="logoFooter">
         </div>
         <div class="footerIzq">
             <ul class="footerInfo">
@@ -86,10 +87,8 @@
           </div> 
     </footer>
     
+    <script src="../js/dark.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/camperas.js"></script>
-    <script src="../js/guantes.js"></script>
-    <script src="../js/cascos.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/nav.js"></script>
 </body>
