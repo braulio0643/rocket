@@ -24,7 +24,7 @@
     "guantes": [{
         "nombre":"Guantes LS2 Ray Negros",
         "img": "../multimedia/ropa/guantes_ls2_ray.webp",
-        "precio": 11000
+        "precio": 16000
     },
     {
         "nombre":"Guantes Fox Dirt Paw Negros",
@@ -34,8 +34,15 @@
     {
         "nombre":"Guantes Sin Dedos De Cuero",
         "img": "../multimedia/ropa/guantes_sin_dedos.jpg",
-        "precio": 10000
-    }],
+        "precio": 14000
+    },
+    {
+        "nombre": "Guantes Revit Verano Sand 3",
+        "img":"https://citymotor.com.ar/wp-content/uploads/2020/10/2a.jpg",
+        "precio": 30000
+    }
+
+    ],
     "cascos": [
         {
             "nombre": "Casco Rocket Abierto Negro",
@@ -54,6 +61,11 @@
             "img": "../multimedia/ropa/casco_moto_abierto_vintage_mujer_vertigo_wind.jpg",
             "precio": 15000
             
+        },
+        {
+            "nombre": "Casco Abierto Vertigo V10 Negro",
+            "img":"https://http2.mlstatic.com/D_NQ_NP_658527-MLA49127681421_022022-O.webp",
+            "precio": 16908
         }
     ]    
 

@@ -1,4 +1,4 @@
-const dark = document.querySelectorAll(".botonDark")
+const dark = [document.getElementById("botonDark"), document.getElementById("botonDarkMobile") ]
 const header = document.getElementById("header")
 const footer = document.getElementById("footer")
 
@@ -56,20 +56,27 @@ function applyDarkMode(status){
                 if(carrito){document.getElementById("carrito-container").classList.add("carritoOscuro")}
                 
         }
-        if(document.title== "Rocket Motorcycles"){
+        if(document.title == "Rocket Motorcycles"){
             document.getElementById("botonCarrito").src= "./multimedia/carrito-yellow.png"
+            document.getElementById("botonCarritoMobile").src= "./multimedia/carrito-yellow.png"
             document.getElementById("botonDark").src="./multimedia/dark-yellow.png"
+            document.getElementById("botonDarkMobile").src="./multimedia/dark-yellow.png"
             document.getElementById("ubicacion").src="./multimedia/ubicacion-yellow.png"
             document.getElementById("ig").src="./multimedia/ig-yellow.png"
             document.getElementById("fb").src="./multimedia/fb-yellow.png"
             document.getElementById("gmail").src="./multimedia/gmail-yellow.png"
+            document.getElementById("bigMac").src="./multimedia/bigmac-yellow.png"
+            
         } else {
             document.getElementById("botonCarrito").src= "../multimedia/carrito-yellow.png"
+            document.getElementById("botonCarritoMobile").src= "../multimedia/carrito-yellow.png"
             document.getElementById("botonDark").src="../multimedia/dark-yellow.png"
+            document.getElementById("botonDarkMobile").src="../multimedia/dark-yellow.png"
             document.getElementById("ubicacion").src="../multimedia/ubicacion-yellow.png"
             document.getElementById("ig").src="../multimedia/ig-yellow.png"
             document.getElementById("fb").src="../multimedia/fb-yellow.png"
             document.getElementById("gmail").src="../multimedia/gmail-yellow.png"
+            document.getElementById("bigMac").src="../multimedia/bigmac-yellow.png"
         }
         
 
@@ -105,17 +112,23 @@ function applyDarkMode(status){
         if(document.title== "Rocket Motorcycles"){
             document.getElementById("botonCarrito").src= "./multimedia/carrito-black.png"
             document.getElementById("botonDark").src="./multimedia/dark.png"
+            document.getElementById("botonCarritoMobile").src= "./multimedia/carrito-black.png"
+            document.getElementById("botonDarkMobile").src="./multimedia/dark.png"
             document.getElementById("ubicacion").src="./multimedia/ubicacion-black.png"
             document.getElementById("ig").src="./multimedia/ig-black.png"
             document.getElementById("fb").src="./multimedia/fb-black.png"
             document.getElementById("gmail").src="./multimedia/gmail-black.png"
+            document.getElementById("bigMac").src="./multimedia/bigmac.png"
         } else {
             document.getElementById("botonCarrito").src= "../multimedia/carrito-black.png"
             document.getElementById("botonDark").src="../multimedia/dark.png"
+            document.getElementById("botonCarritoMobile").src= "../multimedia/carrito-black.png"
+            document.getElementById("botonDarkMobile").src="../multimedia/dark.png"
             document.getElementById("ubicacion").src="../multimedia/ubicacion-black.png"
             document.getElementById("ig").src="../multimedia/ig-black.png"
             document.getElementById("fb").src="../multimedia/fb-black.png"
             document.getElementById("gmail").src="../multimedia/gmail-black.png"
+            document.getElementById("bigMac").src="../multimedia/bigmac.png"
         }
     }
 }

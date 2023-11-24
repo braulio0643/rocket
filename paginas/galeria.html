@@ -13,20 +13,24 @@
 </head>
 <body id="body">
     <div>
-        <header>
+        <header >
             <div class="header" id="header">
                 <div class="bigMac">
-                    <img src="../multimedia/bigmac.png" alt="">
+                    <img src="../multimedia/bigmac.png" id="bigMac">
+                    <div class="botones-mobile-container">
+                        <a href="../paginas/carro.html"><img class="botonCarritoMobile" id="botonCarritoMobile" src="../multimedia/carrito-black.png" alt=""></a>
+                        <img class="botonDarkMobile" id="botonDarkMobile" src="../multimedia/dark.png" alt="">
+                    </div>
                 </div>
                 <div class="logoHeader-container">
                     <img src="../multimedia/logo.png" alt="logo" class="logoHeader">
                   </div>
                   <ul class="navBar" id="navBar">
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="../paginas/productos.html">Productos</a></li>
+                    <li><a href="../paginas/servicios.html">Servicios</a></li>
                     <li>Galería</li>
-                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="../paginas/contacto.html">Contacto</a></li>
                   </ul> 
                   <div class="botones-container">
                     <a href="../paginas/carro.html"><img class="botonCarrito" id="botonCarrito" src="../multimedia/carrito-black.png" alt=""></a>
@@ -115,32 +119,37 @@
         <div class="logoFooter-container">
           <img src="../multimedia/logo.png" alt="logo" class="logoFooter">
         </div>
+        
         <div class="footerIzq">
+            <ul class="footerInfo">    
+                <li>  
+                    <a href="https://www.instagram.com/rocket.motorcycles/?fbclid=IwAR3CwWkrE1keLd7xq0qtKIpXtuPq5DBH2RAZ25Zr1kyN29foZXE1himJWE8">
+                        <img src="../multimedia/ig-black.png" alt="ig" class= "ig" id="ig">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100069224079562">
+                        <img src="../multimedia/fb-black.png" alt="fb" class="fb" id="fb">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mailto:rocketmotorcycle@gmail.com"><img src="../multimedia/gmail-black.png" alt="gmail" class="gmail" id="gmail"></a>
+                </li>
+            </ul>
+          </div> 
+
+          <div class="footerDer">
             <ul class="footerInfo">
-                <li class="flexRow">
+                <li>
                     <img src="../multimedia/ubicacion-black.png" alt="ubi" class = "ubicacion" id="ubicacion">
                     <p>Av. Juan B Justo 2621 CABA</p>
                 </li>
 
-                <li class="flexRow">
-                    <img src="../multimedia/gmail-black.png" alt="gmail" class="gmail" id="gmail">
-                    <p>rocketmotorcycle@gmail.com</p>
-                </li>
+                
             </ul>
         </div>
-        <div class="footerDer">
-            <ul class="footerInfo">    
-                <li>
-                    <img src="../multimedia/ig-black.png" alt="ig" class= "ig" id="ig">
-                    <a href="https://www.instagram.com/rocket.motorcycles/?fbclid=IwAR3CwWkrE1keLd7xq0qtKIpXtuPq5DBH2RAZ25Zr1kyN29foZXE1himJWE8">rocket.motorcycles</a>
-                </li>
-
-                <li>
-                    <img src="../multimedia/fb-black.png" alt="fb" class="fb" id="fb">
-                    <a href="https://www.facebook.com/profile.php?id=100069224079562">Rocket Motorcycles</a>
-                </li>
-            </ul>
-          </div> 
     </footer>
     <script src="../js/dark.js"></script>
     <script src="../js/nav.js"></script>
