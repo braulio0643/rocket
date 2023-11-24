@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicio</title>
+    <title>Servicios</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,10 +11,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../multimedia/favicon-32x32.png">
    
 </head>
-<body>
+<body id="body">
     <div>
-        <header id="header">
-            <div class="header">
+        <header>
+            <div class="header"  id="header">
                 <div class="bigMac">
                     <img src="../multimedia/bigmac.png" alt="">
                 </div>
@@ -29,18 +29,18 @@
                     <li><a href="./contacto.html">Contacto</a></li>
                   </ul> 
                   <div class="botones-container">
-                    <a href="../paginas/carro.html"><img class="botonCarrito" src="../multimedia/carrito-black.png" alt=""></a>
-                    <img class="botonDark" src="../multimedia/dark.png" alt="">
+                    <a href="../paginas/carro.html"><img class="botonCarrito" id="botonCarrito" src="../multimedia/carrito-black.png" alt=""></a>
+                    <img class="botonDark" id="botonDark" src="../multimedia/dark.png" alt="">
                 </div>
             </div>
         </header>
     </div>
 
     <main class="flexCol">
-        <h1>Servicios</h1>
-        <div class="servicios">
+        <h1 id="titulo">Servicios</h1>
+        <div class="servicios" id="servicios">
             <div>
-                <h2 >Pintura</h2>
+                <h2 id="subtitulo">Pintura</h2>
                 <img src="../multimedia/pintar-moto-7-pasos.jpg" alt="pintados">
                 <a href="../paginas/galeria.html#pintados"><h3 >VER TRABAJOS</h3></a>
                 <ul>
@@ -52,7 +52,7 @@
             </div>
     
             <div>
-                <h2>Reparaciones</h2>
+                <h2 id="subtitulo">Reparaciones</h2>
                 <img src="../multimedia/reparar.jpg" alt="reparaciones" >
                 <a href="../paginas/galeria.html#reparaciones"><h3 >VER TRABAJOS</h3></a>
                 <ul>
@@ -65,7 +65,7 @@
             </div>
     
             <div>
-                <h2 >Lavado</h2>
+                <h2 id="subtitulo">Lavado</h2>
                 <img src="../multimedia/lavado1.jpeg" alt="lavado" >
                 <a href="../paginas/galeria.html#lavados"><h3 >VER TRABAJOS</h3></a>
                 <ul>
@@ -74,7 +74,7 @@
             </div>
     
             <div>
-                <h2 >Service</h2>
+                <h2 id="subtitulo">Service</h2>
                 <img src="../multimedia/service.jpeg" alt="service" >
                 <a href="../paginas/galeria.html#service"><h3 >VER TRABAJOS</h3></a>
                 <ul>
@@ -97,12 +97,12 @@
         <div class="footerIzq">
             <ul class="footerInfo">
                 <li class="flexRow">
-                    <img src="../multimedia/ubicacion-black.png" alt="ubi" class = "ubicacion">
+                    <img src="../multimedia/ubicacion-black.png" alt="ubi" class = "ubicacion" id="ubicacion">
                     <p>Av. Juan B Justo 2621 CABA</p>
                 </li>
 
                 <li class="flexRow">
-                    <img src="../multimedia/gmail-black.png" alt="gmail" class="gmail">
+                    <img src="../multimedia/gmail-black.png" alt="gmail" class="gmail" id="gmail">
                     <p>rocketmotorcycle@gmail.com</p>
                 </li>
             </ul>
@@ -110,17 +110,18 @@
         <div class="footerDer">
             <ul class="footerInfo">    
                 <li>
-                    <img src="../multimedia/ig-black.png" alt="ig" class= "ig">
+                    <img src="../multimedia/ig-black.png" alt="ig" class= "ig" id="ig">
                     <a href="https://www.instagram.com/rocket.motorcycles/?fbclid=IwAR3CwWkrE1keLd7xq0qtKIpXtuPq5DBH2RAZ25Zr1kyN29foZXE1himJWE8">rocket.motorcycles</a>
                 </li>
 
                 <li>
-                    <img src="../multimedia/fb-black.png" alt="fb" class="fb">
+                    <img src="../multimedia/fb-black.png" alt="fb" class="fb" id="fb">
                     <a href="https://www.facebook.com/profile.php?id=100069224079562">Rocket Motorcycles</a>
                 </li>
             </ul>
           </div> 
     </footer>
+    <script src="../js/dark.js"></script>
     <script src="../js/nav.js"></script>
 </body>
 </html>

@@ -11,10 +11,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../multimedia/favicon-32x32.png">
     
 </head>
-<body>
+<body id="body">
     <div>
         <header>
-            <div class="header">
+            <div class="header" id="header">
                 <div class="bigMac">
                     <img src="../multimedia/bigmac.png" alt="">
                 </div>
@@ -29,71 +29,81 @@
                     <li><a href="./contacto.html">Contacto</a></li>
                   </ul> 
                   <div class="botones-container">
-                    <a href="../paginas/carro.html"><img class="botonCarrito" src="../multimedia/carrito-black.png" alt=""></a>
-                    <img class="botonDark" src="../multimedia/dark.png" alt="">
+                    <a href="../paginas/carro.html"><img class="botonCarrito" id="botonCarrito" src="../multimedia/carrito-black.png" alt=""></a>
+                    <img class="botonDark" id="botonDark" src="../multimedia/dark.png" alt="">
                 </div>
             </div>
         </header>
     </div>
 
     <main>
-        <h1 class="centrado" id="titulo">Galería</h1>
+        <div class="galeria" id="galeria">
+            <h1 id="titulo">Galería</h1>
 
-        <section class="trabajos" id="pintados">
-            <h2>Pintados</h2>
-            <img src="../multimedia/pintura/1.jpeg" alt="1">
-            <img src="../multimedia/pintura/2.jpeg" alt="2">
-            <img src="../multimedia/pintura/3.png" alt="3">
-            <img src="../multimedia/pintura/4.jpeg" alt="4">
-            <img src="../multimedia/pintura/5.jpeg" alt="5">
-            <img src="../multimedia/pintura/6.jpeg" alt="6">
-            <img src="../multimedia/pintura/7.jpeg" alt="7">
-            <img src="../multimedia/pintura/8.jpeg" alt="8">
-        </section>
 
-        <section class="trabajos" id="reparaciones">
-            <h2>Reparaciones</h2>
-            <img src="../multimedia/reparaciones/1.jpeg" alt="1">
-            <img src="../multimedia/reparaciones/2.jpeg" alt="2">
-            <img src="../multimedia/reparaciones/3.jpeg" alt="3">
-            <img src="../multimedia/reparaciones/4.jpeg" alt="4">
-            <img src="../multimedia/reparaciones/5.jpeg" alt="5">
-            <img src="../multimedia/reparaciones/6.jpeg" alt="6">
-            <img src="../multimedia/reparaciones/7.jpeg" alt="7">
-            <img src="../multimedia/reparaciones/8.jpeg" alt="8">
-            <img src="../multimedia/reparaciones/9.jpeg" alt="9">
-            <img src="../multimedia/reparaciones/10.jpeg" alt="10">
-            <img src="../multimedia/reparaciones/11.jpeg" alt="11">
-        </section>
+            <h2 id="subtitulo">Pintados</h2>
+            <div class="trabajos" id="pintados">
+                
+                <img src="../multimedia/pintura/1.jpeg" alt="1">
+                <img src="../multimedia/pintura/2.jpeg" alt="2">
+                <img src="../multimedia/pintura/3.png" alt="3">
+                <img src="../multimedia/pintura/4.jpeg" alt="4">
+                <img src="../multimedia/pintura/5.jpeg" alt="5">
+                <img src="../multimedia/pintura/6.jpeg" alt="6">
+                <img src="../multimedia/pintura/7.jpeg" alt="7">
+                <img src="../multimedia/pintura/8.jpeg" alt="8">
+            </div>
+    
+            <h2 id="subtitulo">Reparaciones</h2>
+            <div class="trabajos" id="reparaciones">
+                
+                <img src="../multimedia/reparaciones/1.jpeg" alt="1">
+                <img src="../multimedia/reparaciones/2.jpeg" alt="2">
+                <img src="../multimedia/reparaciones/3.jpeg" alt="3">
+                <img src="../multimedia/reparaciones/4.jpeg" alt="4">
+                <img src="../multimedia/reparaciones/5.jpeg" alt="5">
+                <img src="../multimedia/reparaciones/6.jpeg" alt="6">
+                <img src="../multimedia/reparaciones/7.jpeg" alt="7">
+                <img src="../multimedia/reparaciones/8.jpeg" alt="8">
+                <img src="../multimedia/reparaciones/9.jpeg" alt="9">
+                <img src="../multimedia/reparaciones/10.jpeg" alt="10">
+                <img src="../multimedia/reparaciones/11.jpeg" alt="11">
+            </div>
 
-        <section class="trabajos" id="lavados">
-            <h2>Lavados</h2>
-            <img src="../multimedia/lavados/lavado1.jpeg" alt="1">
-            <img src="../multimedia/lavados/lavado2.jpeg" alt="2">
-            <img src="../multimedia/lavados/lavado3.jpeg" alt="3">
-            <img src="../multimedia/lavados/lavado4.jpeg" alt="4">
-            <img src="../multimedia/lavados/lavado5.jpeg" alt="5">
-            <img src="../multimedia/lavados/lavado6.jpeg" alt="6">
-            <img src="../multimedia/lavados/lavado7.jpeg" alt="7">
-            <img src="../multimedia/lavados/lavado8.jpeg" alt="8">
-            <img src="../multimedia/lavados/lavado9.jpeg" alt="9">
-            <img src="../multimedia/lavados/lavado10.jpeg" alt="10">
-            <img src="../multimedia/lavados/lavado11.jpeg" alt="11">
-            <img src="../multimedia/lavados/lavado12.jpeg" alt="12">
-        </section>
+            <h2 id="subtitulo">Lavados</h2>
+            <div class="trabajos" id="lavados">
+                
+                <img src="../multimedia/lavados/lavado1.jpeg" alt="1">
+                <img src="../multimedia/lavados/lavado2.jpeg" alt="2">
+                <img src="../multimedia/lavados/lavado3.jpeg" alt="3">
+                <img src="../multimedia/lavados/lavado4.jpeg" alt="4">
+                <img src="../multimedia/lavados/lavado5.jpeg" alt="5">
+                <img src="../multimedia/lavados/lavado6.jpeg" alt="6">
+                <img src="../multimedia/lavados/lavado7.jpeg" alt="7">
+                <img src="../multimedia/lavados/lavado8.jpeg" alt="8">
+                <img src="../multimedia/lavados/lavado9.jpeg" alt="9">
+                <img src="../multimedia/lavados/lavado10.jpeg" alt="10">
+                <img src="../multimedia/lavados/lavado11.jpeg" alt="11">
+                <img src="../multimedia/lavados/lavado12.jpeg" alt="12">
+            </div>
+            
+            <h2 id="subtitulo">Service</h2>
+            <div class="trabajos" id="service">
+                
+                <img src="../multimedia/service/1.jpeg" alt="1">
+                <img src="../multimedia/service/2.jpeg" alt="2">
+                <img src="../multimedia/service/3.jpeg" alt="3">
+                <img src="../multimedia/service/4.jpeg" alt="4">
+                <img src="../multimedia/service/5.jpeg" alt="5">
+                <img src="../multimedia/service/6.jpeg" alt="6">
+                <img src="../multimedia/service/7.jpeg" alt="7">
+                <img src="../multimedia/service/8.jpeg" alt="8">
+                <img src="../multimedia/service/9.jpeg" alt="9">
+            </div>
+        </div>
+        
 
-        <section class="trabajos" id="service">
-            <h2>Service</h2>
-            <img src="../multimedia/service/1.jpeg" alt="1">
-            <img src="../multimedia/service/2.jpeg" alt="2">
-            <img src="../multimedia/service/3.jpeg" alt="3">
-            <img src="../multimedia/service/4.jpeg" alt="4">
-            <img src="../multimedia/service/5.jpeg" alt="5">
-            <img src="../multimedia/service/6.jpeg" alt="6">
-            <img src="../multimedia/service/7.jpeg" alt="7">
-            <img src="../multimedia/service/8.jpeg" alt="8">
-            <img src="../multimedia/service/9.jpeg" alt="9">
-        </section>
+        
         
     </main>
 
@@ -101,19 +111,19 @@
         <a href="https://wa.me/1130606789?text=Hola!%20Quiero%20hacer%20una%20consulta%20..."><img src="../multimedia/whatspp-1076x1076.png" alt="wpp" class="wpp"> </a>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="logoFooter-container">
           <img src="../multimedia/logo.png" alt="logo" class="logoFooter">
         </div>
         <div class="footerIzq">
             <ul class="footerInfo">
                 <li class="flexRow">
-                    <img src="../multimedia/ubicacion-black.png" alt="ubi" class = "ubicacion">
+                    <img src="../multimedia/ubicacion-black.png" alt="ubi" class = "ubicacion" id="ubicacion">
                     <p>Av. Juan B Justo 2621 CABA</p>
                 </li>
 
                 <li class="flexRow">
-                    <img src="../multimedia/gmail-black.png" alt="gmail" class="gmail">
+                    <img src="../multimedia/gmail-black.png" alt="gmail" class="gmail" id="gmail">
                     <p>rocketmotorcycle@gmail.com</p>
                 </li>
             </ul>
@@ -121,17 +131,18 @@
         <div class="footerDer">
             <ul class="footerInfo">    
                 <li>
-                    <img src="../multimedia/ig-black.png" alt="ig" class= "ig">
+                    <img src="../multimedia/ig-black.png" alt="ig" class= "ig" id="ig">
                     <a href="https://www.instagram.com/rocket.motorcycles/?fbclid=IwAR3CwWkrE1keLd7xq0qtKIpXtuPq5DBH2RAZ25Zr1kyN29foZXE1himJWE8">rocket.motorcycles</a>
                 </li>
 
                 <li>
-                    <img src="../multimedia/fb-black.png" alt="fb" class="fb">
+                    <img src="../multimedia/fb-black.png" alt="fb" class="fb" id="fb">
                     <a href="https://www.facebook.com/profile.php?id=100069224079562">Rocket Motorcycles</a>
                 </li>
             </ul>
           </div> 
     </footer>
+    <script src="../js/dark.js"></script>
     <script src="../js/nav.js"></script>
 </body>
 </html>

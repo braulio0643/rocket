@@ -6,4 +6,6 @@
 -botones del carro y dark mode desde celular
 -completar dark mode (para cada página)
 -responsiveness del carrito (se ve mal en mobile)
--cambiar font
+-cambiar font. posibles fonts: lobster, 
+-arreglar y agregar animaciones: cambiar transition por fadeIn
+-hacer que esté todo en la misma página (1 html y muchos opacity 0 a 100 % con js)

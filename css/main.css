@@ -7,14 +7,27 @@
 body{
     /* background-color: rgb(141, 141, 141); */
     /*  */
-    background-image: linear-gradient(rgb(48, 48, 48),grey,rgb(48, 48, 48));
+    background-image: linear-gradient(to right, rgb(48, 48, 48),grey,rgb(48, 48, 48));
     max-width: 100%;
     overflow-x: hidden;
+}
+
+.tiendaOscura { 
+    transition: all 1s;
 }
 
 .darkMode,.tiendaOscura div .producto{
     background-color:rgb(0, 0, 0) !important;
     border-radius: 5px black !important;
+}
+
+.tiendaOscura .add-carrito{
+    background-color: rgb(244, 183, 64);;
+    border-radius: 5px;
+}
+.tiendaOscura .producto .add-carrito h4{
+    color: black !important;
+    transition: all 1s;
 }
 
 .darkMode h1, .yellow, .darkMode li, .darkMode h2, .darkMode p, .tiendaOscura .producto h3, .tiendaOscura .producto h4, .tiendaOscura .centrado{
@@ -27,19 +40,19 @@ body{
 }
 
 .darkBackground{
-    background-image: linear-gradient(rgb(24, 23, 23),rgb(58, 58, 58),rgb(24, 23, 23));
+    background-image: linear-gradient(rgb(24, 23, 23),rgb(37, 37, 37),rgb(24, 23, 23));
     transition:all 1s;
 }
 .tiendaOscura .fondoAmarillo{
     background-color: rgba(0, 0, 0, 0) !important;
 }
-.fondoAmarillo{
+/* .fondoAmarillo{
     background-color: rgb(244, 183, 64);
     border-radius: 5px;
     padding: 10px 5px;
     transition: all 1s;
 }
-
+ */
 a{
     text-decoration: none;
     color: inherit;
@@ -56,6 +69,7 @@ h1{
 h2{
     font-size: 2.3rem;
     padding-right: 10px;
+    text-decoration: underline;
 }
 
 h3{
@@ -82,9 +96,7 @@ li:hover{
     
 }
 
-p{
-    text-align: center;
-}
+
 
 label{
     font-size: 1.5rem;
@@ -126,15 +138,17 @@ input[type=submit] {
     justify-content: space-around;
     width: 100%;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .logoHeader-container{
     display: none;
+    width: 200px;
 }
 
 .logoHeader{
-    width: 130px;
-    height: 130px;
+    width: 200px;
+    height: 200px;
     left:10px;  
     top:10px;
 }
@@ -159,19 +173,21 @@ input[type=submit] {
 }
 
 .footer{
-    background-color: rgb(244, 183, 64);
+    background-color: #f4b740;
     display: flex;
     flex-direction: row;   
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
     width: 100%;
     padding: 10px 0px;
-
     bottom: 0px;
+    border-radius: 100px;
 }
 
 .footerIzq,.footerDer{
-    width: 40%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -187,6 +203,7 @@ input[type=submit] {
 .footerInfo{
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: 100%;
     justify-content: space-evenly;
     align-items: center;
@@ -206,8 +223,8 @@ input[type=submit] {
 }
 
 .logoFooter{
-    width: 150px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     left:10px;
     bottom:20px;
 }
@@ -231,8 +248,8 @@ input[type=submit] {
 
 
 .gmail, .ubicacion, .ig, .fb{
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
 }
 
 .contacto{
@@ -244,6 +261,9 @@ input[type=submit] {
     gap: 100px;
 }
 
+.contactoOscuro .formulario div label{
+    color: #f4b740;
+}
 
 
 .inlineBlock{
@@ -317,6 +337,7 @@ input[type=submit] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 1s;
 }
 
 .tienda h2{
@@ -371,6 +392,7 @@ input[type=submit] {
     background-color: rgb(244, 183, 64);
     border-radius: 10px;
     width: 800px;
+    min-height: 300px;
 }
 
 .itemCarrito{
@@ -381,6 +403,13 @@ input[type=submit] {
     align-items: center;
     margin: 10px;
     gap: 20px;
+}
+
+.carritoOscuro .carrito, .carritoOscuro .precioTotal h2{
+    color:#f4b740 
+}
+.carritoOscuro .carrito, .carritoOscuro .precioTotal{
+    background-color: black;
 }
 
 .fotoItemCarrito{
@@ -436,6 +465,7 @@ input[type=submit] {
 .botonCarrito, .botonDark{
     width: 100px;
     height: 100px;
+    cursor: pointer;
 }
 
 
@@ -460,7 +490,7 @@ input[type=submit] {
 .servicios{
     display: flex;
     flex-direction: column;
-
+    margin: 50px;
 }
 
 .servicios div{
@@ -470,19 +500,26 @@ input[type=submit] {
     padding: 20px;
     margin: 10px 15px;
     background-color: rgb(244, 183, 64);
-    width:320px;
-    height:550px;
+    width:400px;
+    height:700px;
     overflow: auto;
     gap: 15px;
+    border-radius: 10px;
 }
 
 .servicios div h2{
     text-decoration: underline;
+
+}
+
+.servicios div ul li {
+    font-size: 1.3rem;
+    margin: 10px 20px;
 }
 
 .servicios div img{
-    width: 320px;
-    height: 340px;
+    width: 400px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -491,8 +528,30 @@ input[type=submit] {
     text-align: center;
     background-color: grey;
     padding: 10px;
+    border-radius: 5px;
 }
 
+.serviciosOscuros div{
+    background-color: black;
+}
+.serviciosOscuros div h2, .serviciosOscuros div ul li{
+    color: #f4b740;
+}
+
+.serviciosOscuros div h3{
+    background-color: #f4b740;
+    color: black;
+}
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galeriaOscura h2{
+    color:#f4b740;
+}
 
 
 @media screen and (min-width:1200px) {
@@ -511,6 +570,7 @@ input[type=submit] {
     }
     .header{
         flex-direction: row;
+        border-radius: 100px;
     }
     .logoFooter-container{
         display: block;
