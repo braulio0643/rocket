@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocket Motorcycles</title>
-   <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Lato&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="multimedia/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
     
 </head>
 
@@ -17,7 +19,11 @@
     <header >
         <div class="header" id="header">
             <div class="bigMac">
-                <img src="multimedia/bigmac.png" alt="">
+                <img src="multimedia/bigmac.png" alt="" id="bigMac">
+                <div class="botones-mobile-container">
+                    <a href="paginas/carro.html"><img class="botonCarrito" id="botonCarrito" src="multimedia/carrito-black.png" alt=""></a>
+                    <img class="botonDark" id="botonDark" src="multimedia/dark.png" alt="">
+                </div>
             </div>
             <div class="logoHeader-container">
                 <img src="multimedia/logo.png" alt="logo" class="logoHeader">
@@ -30,8 +36,8 @@
                 <li><a href="paginas/contacto.html">Contacto</a></li>
               </ul> 
               <div class="botones-container">
-                <a href="paginas/carro.html"><img class="botonCarrito" id="botonCarrito" src="multimedia/carrito-black.png" alt=""></a>
-                <img class="botonDark" id="botonDark" src="multimedia/dark.png" alt="">
+                <a href="paginas/carro.html"><img class="botonCarritoMobile" src="multimedia/carrito-black.png" alt=""></a>
+                <img class="botonDarkMobile" src="multimedia/dark.png" alt="">
             </div>
         </div>
     </header>
@@ -39,8 +45,19 @@
     <main>
         <div class="inicio">
             <h1  id="titulo">Bienvenido!</h1>
-            <img src="multimedia/taller.png" alt="taller" class="fotoInicio">
-            <!-- Me gustaría agregar un slider de imágenes acá -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="multimedia/carousel/1.png" alt=""></div>
+                  <div class="swiper-slide"><img src="multimedia/carousel/2.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="multimedia/carousel/3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="multimedia/carousel/4.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="multimedia/carousel/5.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="multimedia/carousel/6.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
             <div class="textoInicio" id="textoInicio">
                 <h2 id="subtitulo">La confianza en la experiencia y calidad</h2>
                 <p>Desde principios de 2018 estamos junto a la marca Royal Enfield. 
@@ -88,6 +105,8 @@
             </ul>
           </div> 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/dark.js"></script>
     <script src="js/nav.js"></script>
 </body>

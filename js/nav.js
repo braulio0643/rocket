@@ -1,4 +1,4 @@
-const bigMac = document.querySelector(".bigMac")
+const bigMac = document.querySelector("#bigMac")
 const nav = document.getElementById("navBar")
 
 bigMac.addEventListener("click", ()=> {

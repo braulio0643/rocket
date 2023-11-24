@@ -1,4 +1,4 @@
-const dark = document.querySelector(".botonDark")
+const dark = document.querySelectorAll(".botonDark")
 const header = document.getElementById("header")
 const footer = document.getElementById("footer")
 
@@ -14,16 +14,18 @@ if(statusDark){
     localStorage.setItem("dark", JSON.stringify(statusDark))
 }
 
-
-dark.addEventListener("click", ()=> {
-    if(header.classList.contains("darkMode") && footer.classList.contains("darkMode")){
-        applyDarkMode(false)
-        localStorage.setItem("dark", JSON.stringify(false))
-    } else {
-        applyDarkMode(true)
-        localStorage.setItem("dark", JSON.stringify(true))
-    }
+dark.forEach((element)=>{
+    element.addEventListener("click", ()=> {
+        if(header.classList.contains("darkMode") && footer.classList.contains("darkMode")){
+            applyDarkMode(false)
+            localStorage.setItem("dark", JSON.stringify(false))
+        } else {
+            applyDarkMode(true)
+            localStorage.setItem("dark", JSON.stringify(true))
+        }
+    })
 })
+
 function applyDarkMode(status){
     if(status){
         header.classList.add("darkMode")

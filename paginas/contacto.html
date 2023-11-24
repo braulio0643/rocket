@@ -40,30 +40,30 @@
     <main>
         <div class="contacto" id="contacto">
             <div>
-                <form method="" action="" enctype="" class="formulario">           
+                <form method="" action="" enctype="" class="formulario" id="form">           
                     <div>
                         <h1 id="titulo">Contactanos</h1>
                     </div>
     
                     <div>
                         <label for="nombre">Nombre:</label>
-                        <input type="text" required name="nombre">
+                        <input type="text" required name="nombre" id="nombre">
                     </div>
         
                     <div>
                         <label for="telefono">Teléfono:</label>
-                        <input type="text" required name="telefono">
+                        <input type="text" required name="telefono" id="telefono">
                     </div>
         
                     <div>
                         <label for="mail">Mail:</label>
-                        <input type="email" required name="mail">
+                        <input type="email" required name="mail" id="mail">
                     </div>
     
                     <div class="textBox">
                         <label for="mensaje" class="block">Mandanos tu mensaje:</label>
-                        <textarea name="mensaje" cols="30" rows="10" class="block"></textarea>
-                        <input type="submit"  value="Enviar">
+                        <textarea name="mensaje" cols="30" rows="10" class="block" id="textarea"></textarea>
+                        <input type="submit"  value="Enviar" id="submit">
                     </div>
             
                 </form>
@@ -112,6 +112,8 @@
             </ul>
           </div> 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/contacto.js"></script>
     <script src="../js/dark.js"></script>
     <script src="../js/nav.js"></script>
 </body>
