@@ -5,3 +5,4 @@
 -cambiar font. posibles fonts: lobster, 
 -arreglar y agregar animaciones: cambiar transition por fadeIn
 -hacer que esté todo en la misma página (1 html y muchos opacity 0 a 100 % con js)
+-texto rancio en el inicio

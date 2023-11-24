@@ -130,5 +130,7 @@ if(carrito){
 console.log(carrito)
 
 
+document.querySelector()
+
 
 
