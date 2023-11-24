@@ -43,16 +43,47 @@
     <main>
         <div class="tienda" id="tienda">
             
-            <h1 id="titulo"class="titulo fondoAmarillo">Productos</h1>
-        
-            <h2 class="centrado fondoAmarillo" id="subtitulo">Cascos</h2>
-            <div class="categoria" id="cascos"></div>
+            <div class="barraProductos">
+                <div class="fieldset-container">
+                    <fieldset class="filtros">
+                        <legend>Filtros:</legend>
+                        <div>
+                            <input type="radio" name="filtro" id="filtroReset" value="filtroReset" checked>
+                            <label for="">Todos</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="filtro" id="filtroCascos" value="filtroCascos">
+                            <label for="">Cascos</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="filtro" id="filtroGuantes" value="filtroGuantes">
+                            <label for="">Guantes</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="filtro" id="filtroCamperas" value="filtroCamperas">
+                            <label for="">Camperas</label>
+                        </div>
+                    </fieldset>
+                </div>
+                
+                <h1 id="titulo"class="titulo fondoAmarillo" id="productos">Productos</h1>
+                <div class="orden">
+                    <select name="Ordenar por.." id="ordenar">
+                        <option value="precioCreciente">Menor a mayor precio</option>
+                        <option value="precioDecreciente">Mayor a menor precio</option>
+                        <option value="alfaCreciente">Orden alfabético (A-Z)</option>
+                        <option value="alfaDecreciente">Orden alfabético (Z-A)</option>
+                    </select>
+                </div>
+                
+            </div>
+            
 
-            <h2 class="centrado fondoAmarillo" id="subtitulo">Guantes</h2>
-            <div class="categoria" id="guantes"></div>
+            <div class="categoria">
+                
+            </div>
 
-            <h2 class="centrado fondoAmarillo" id="subtitulo">Camperas</h2>
-            <div class="categoria" id="camperas"></div>
+
         </div>
     </main>
 
