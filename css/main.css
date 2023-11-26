@@ -187,8 +187,8 @@ input[type=submit] {
 }
 
 .logoHeader{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     left:10px;  
     top:10px;
 }
@@ -262,8 +262,8 @@ input[type=submit] {
 }
 
 .logoFooter{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     left:10px;
     bottom:20px;
 }
@@ -440,18 +440,18 @@ input[type=submit] {
     align-items: center;
     background-color: rgb(244, 183, 64);
     border-radius: 10px;
-    width: 800px;
     min-height: 300px;
 }
 
 .itemCarrito{
     width: 90%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 10px;
     gap: 20px;
+    border: 5px solid black;
 }
 
 .carritoOscuro .carrito, .carritoOscuro .precioTotal h2{
@@ -475,14 +475,13 @@ input[type=submit] {
 
 .precioTotal{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     background-color: rgb(244, 183, 64);
     border-radius: 10px;
     margin: 20px;
+    gap: 30px;
     padding: 15px;
-    width: 800px;
 }
 
 .reset{
@@ -549,8 +548,8 @@ input[type=submit] {
     padding: 20px;
     margin: 10px 15px;
     background-color: rgb(244, 183, 64);
-    width:400px;
-    height:700px;
+    width:300px;
+    height:600px;
     overflow: auto;
     gap: 15px;
     border-radius: 10px;
@@ -567,8 +566,8 @@ input[type=submit] {
 }
 
 .servicios div img{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
 }
 
@@ -730,6 +729,12 @@ input[type=submit] {
     .barraProductos{
         flex-direction: row;
     }
-
-
+    .itemCarrito{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .precioTotal{
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }

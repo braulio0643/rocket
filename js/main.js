@@ -119,6 +119,7 @@ document.getElementById("ordenar").addEventListener('change',(event)=>{
 
 document.getElementById("filtroReset").addEventListener('click', (event)=>{
     const filtro = event.target.value
+    localStorage.setItem("filtros", event.target.value)
     const orden = localStorage.getItem("orden")
     peticion(orden, filtro)
 
@@ -126,18 +127,21 @@ document.getElementById("filtroReset").addEventListener('click', (event)=>{
 
 document.getElementById("filtroCascos").addEventListener('click', (event) => {
     const filtro = event.target.value
+    localStorage.setItem("filtros", event.target.value)
     const orden = localStorage.getItem("orden")
     peticion(orden, filtro)
 })
 
 document.getElementById("filtroGuantes").addEventListener('click',(event) => {
     const filtro = event.target.value
+    localStorage.setItem("filtros", event.target.value)
     const orden = localStorage.getItem("orden")
     peticion(orden, filtro)
 })
 
 document.getElementById("filtroCamperas").addEventListener('click',(event) => {
     const filtro = event.target.value
+    localStorage.setItem("filtros", event.target.value)
     const orden = localStorage.getItem("orden")
     peticion(orden, filtro)
 })
