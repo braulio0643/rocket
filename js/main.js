@@ -96,6 +96,10 @@ const filtrar= (data,filtro) => {
         localStorage.setItem("filtros","filtroCamperas")
         return data.filter((producto)=> (producto.nombre.includes('Campera') || producto.nombre.includes('Buzo')))
     }
+    if(filtro=="filtroOfertas"){
+        localStorage.setItem("filtros","filtroOfertas")
+        return data.filter((producto)=> (producto.descuento> 0))
+    }
     return data
 }
 
@@ -166,6 +170,13 @@ document.getElementById("filtroGuantes").addEventListener('click',(event) => {
 })
 
 document.getElementById("filtroCamperas").addEventListener('click',(event) => {
+    const filtro = event.target.value
+    localStorage.setItem("filtros", event.target.value)
+    const orden = localStorage.getItem("orden")
+    peticion(orden, filtro)
+})
+
+document.getElementById("filtroOfertas").addEventListener('click',(event) => {
     const filtro = event.target.value
     localStorage.setItem("filtros", event.target.value)
     const orden = localStorage.getItem("orden")

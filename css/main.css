@@ -32,7 +32,12 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 400px;
+    width: 80%;
+    gap: 15px;
+}
+
+.filtros label{
+    font-size: 1rem;
 }
 
 .tiendaOscura { 
@@ -71,7 +76,7 @@ body{
 }
 
 .fieldset-container{
-    width: 33%;
+    width: 80%;
 }
 
 /* .fondoAmarillo{
@@ -766,5 +771,8 @@ input[type=submit] {
     .textoInicio{
         width: 55%;
 
+    }
+    .fieldset-container, .filtros{
+        width: 33%;
     }
 }

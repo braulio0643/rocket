@@ -78,6 +78,16 @@ document.querySelector("#confirm").addEventListener("click", ()=>{
             icon: "success"
           });
         }
+        carrito = []
+        localStorage.setItem("carro", JSON.stringify(carrito))
+        document.querySelector("#carrito").innerHTML = ``
+        precioTotal= 0
+        document.querySelector("#precioTotal").innerHTML = `
+            <h2> $ ${precioTotal} </h2>
+            <div class= "reset" id ="reset"> <h3> Cancelar </h3>  </div>
+            <div class = "confirm" id = "confirm"> <h3> Confirmar </h3> </div>
+        `
+
       });
 })
 
