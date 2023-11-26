@@ -9,18 +9,34 @@ if(carrito){
 
 let precioTotal = 0
 for(let i = 0; i < carrito.length; i++){
-    precioTotal += carrito[i].precio
+    if(carrito[i].descuento == 0){
+        precioTotal += carrito[i].precio
+    } else {
+        precioTotal += carrito[i].precio - carrito[i].precio*carrito[i].descuento
+    }
+    
 }
 
 const carritoDisplay = carrito.reduce((acc, elemento)=>{
-    return acc + `
-    <div class = "itemCarrito">   
-        <h3> $${elemento.precio}</h3>
-        <img class= "fotoItemCarrito" src= ${elemento.img}>
-        <h2> ${elemento.nombre}</h2>
-        <img class= "borrarItemCarrito" id="borrarItem" src= "../multimedia/borrar.png">
-    </div>
-    `
+    if(elemento.descuento==0){
+        return acc + `
+        <div class = "itemCarrito">   
+            <h3> $${elemento.precio}</h3>
+            <img class= "fotoItemCarrito" src= ${elemento.img}>
+            <h2> ${elemento.nombre}</h2>
+            <img class= "borrarItemCarrito" id="borrarItem" src= "../multimedia/borrar.png">
+        </div>
+        `
+    } else {
+        return acc + `
+        <div class = "itemCarrito">   
+            <h3> $${elemento.precio - elemento.precio*elemento.descuento}</h3>
+            <img class= "fotoItemCarrito" src= ${elemento.img}>
+            <h2> ${elemento.nombre}</h2>
+            <img class= "borrarItemCarrito" id="borrarItem" src= "../multimedia/borrar.png">
+        </div>
+        `
+    }
 }, "")
 
 

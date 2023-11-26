@@ -363,9 +363,9 @@ input[type=submit] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 55%;
+    width: 90%;
     gap: 15px;
-    margin: 50px;
+    margin: 50px 0px;
     padding: 15px;
 }
 .textoInicio h2{
@@ -390,7 +390,7 @@ input[type=submit] {
 }
 
 
-.categoria{
+.categoria,.categoriaHome{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -400,6 +400,22 @@ input[type=submit] {
     margin-bottom: 50px;
 }
 
+.categoriaHome{
+    margin-top: 20px;
+}
+.categoriaHome .producto{
+    width: 250px;
+    height: 330px;
+}
+.categoriaHome .producto img{
+    width: 150px;
+    height: 150px;
+}
+
+.categoriaHome .add-carrito{
+    width: 150px;
+    min-height: 50px;
+}
 
 
 .producto{
@@ -642,8 +658,8 @@ input[type=submit] {
     }
 
     .swiper {
-      width: 90%;
-      height: 800px;
+      width: 80%;
+      height: 650px;
     }
 
     .swiper-slide {
@@ -671,6 +687,16 @@ input[type=submit] {
         --swiper-theme-color: #f4b740;
     }
     
+    .tachado{
+        text-decoration: line-through;
+    }
+    .precio-en-descuento{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
 
 @media screen and (min-width:1200px) {
     .logoHeader-container{
@@ -699,7 +725,7 @@ input[type=submit] {
         display: block;
     }
     
-    .categoria{
+    .categoria, .categoriaHome{
         
         flex-direction: row;
         justify-content: center;
@@ -736,5 +762,9 @@ input[type=submit] {
     .precioTotal{
         flex-direction: row;
         justify-content: space-around;
+    }
+    .textoInicio{
+        width: 55%;
+
     }
 }

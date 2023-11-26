@@ -2,66 +2,78 @@
 [       {
             "nombre":"Buzo Negro Rocket Motorcycles",
             "img": "../multimedia/ropa/buzo_negro_rocket.png",
-            "precio": 7000
+            "precio": 7000,
+            "descuento": 0.25 
         },
         {
             "nombre":"Campera Cuero Moto Racer Negra",
             "img": "../multimedia/ropa/campera_de_cuero_moto_racer.jpg",
-            "precio": 30000
+            "precio": 30000,
+            "descuento": 0
         },
         {
             "nombre":"Campera Cuero Revit Negra",
             "img": "../multimedia/ropa/campera_revit_cuero.webp",
-            "precio": 25000
+            "precio": 25000,
+            "descuento": 0
         },
         {
             "nombre": "Campera Nine To One Negra",
             "img": "../multimedia/ropa/campera_nine_to_one.webp",
-            "precio": 25000
+            "precio": 25000,
+            "descuento": 0
         },
         
         {
         "nombre":"Guantes LS2 Ray Negros",
         "img": "../multimedia/ropa/guantes_ls2_ray.webp",
-        "precio": 16000
+        "precio": 16000,
+        "descuento": 0
          },
          {
         "nombre":"Guantes Fox Dirt Paw Negros",
         "img": "../multimedia/ropa/guantes_fox_dirtpaw.jpeg",
-        "precio": 12000
+        "precio": 12000,
+        "descuento": 0
     },
     {
         "nombre":"Guantes Sin Dedos De Cuero",
         "img": "../multimedia/ropa/guantes_sin_dedos.jpg",
-        "precio": 14000
+        "precio": 14000,
+        "descuento": 0
     },
     {
         "nombre": "Guantes Revit Verano Sand 3",
         "img":"https://citymotor.com.ar/wp-content/uploads/2020/10/2a.jpg",
-        "precio": 30000
+        "precio": 30000,
+        "descuento": 0
     },
         {
             "nombre": "Casco Rocket Abierto Negro",
             "img": "../multimedia/ropa/casco_negro_abierto_rocket.png",
-            "precio" : 15000
+            "precio" : 15000,
+            "descuento": 0.15
             
         },
         {
             "nombre": "Casco LS2 352 Negro",
             "img": "../multimedia/ropa/casco_ls2_352_rookie_mono_negro.jpg",
-            "precio": 20000
+            "precio": 20000,
+            "descuento": 0
             
         },
         {
             "nombre": "Casco Abierto Vintage Mujer",
             "img": "../multimedia/ropa/casco_moto_abierto_vintage_mujer_vertigo_wind.jpg",
-            "precio": 15000
+            "precio": 15000,
+            "descuento": 0
             
         },
         {
             "nombre": "Casco Abierto Vertigo V10 Negro",
             "img":"https://http2.mlstatic.com/D_NQ_NP_658527-MLA49127681421_022022-O.webp",
-            "precio": 16908
+            "precio": 16900,
+            "descuento": 0
         }
  
     ]

@@ -1,31 +1,57 @@
 
 let orden = localStorage.getItem("orden")
 let filtros = localStorage.getItem("filtros")
+let ofertas = localStorage.getItem("ofertas")
 if(!orden) {localStorage.setItem("orden", "alfaCreciente")}
 if(!filtros){localStorage.setItem("filtros", "todos")}
-
-function visualizarProductos (array){
-    const resultado = array.reduce((acc, elemento) => {
-        return acc + `
-        <div class = "producto">
-            <h3 class="centrado">${elemento.nombre}</h3>
-    
-            <div class="container-img">
-                <img class="centrado" src=${elemento.img} alt=${elemento.nombre}>
-            </div>
-    
-            <h4>$${elemento.precio}</h4>
-    
-            <div class="add-carrito" id="addCampera">
-                <h4> Añadir al carrito </h4>
-            </div>
-        </div>
-        `
-    }, "")
-    return resultado
+if(!ofertas){
+    localStorage.setItem("ofertas", JSON.stringify([]))
+    ofertas = JSON.parse(ofertas)
 }
 
 
+
+
+function visualizarProductos (array){
+    const resultado = array.reduce((acc, elemento) => {
+        if(elemento.descuento==0){
+            return acc + `
+            <div class = "producto">
+                <h3 class="centrado">${elemento.nombre}</h3>
+            
+                <div class="container-img">
+                    <img class="centrado" src=${elemento.img} alt=${elemento.nombre}>
+                </div>
+            
+                <h4>$${elemento.precio}</h4>
+            
+                <div class="add-carrito" id="addCampera">
+                    <h4> Añadir al carrito </h4>
+                </div>
+        </div>
+        `} else {
+            return acc + `
+            <div class = "producto">
+                <h3 class="centrado">${elemento.nombre}</h3>
+            
+                <div class="container-img">
+                    <img class="centrado" src=${elemento.img} alt=${elemento.nombre}>
+                </div>
+            
+                <div class= "precio-en-descuento"> 
+                    <h4 class="tachado">$${elemento.precio}</h4>
+                    <h3>-${elemento.descuento*100}% OFF!  </h3>
+                </div> 
+                <h4> $${elemento.precio*(1-elemento.descuento)} </h4>
+            
+                <div class="add-carrito" id="addCampera">
+                    <h4> Añadir al carrito </h4>
+                </div>
+        </div>
+        `}
+    }, "")
+    return resultado
+}
 
 
 
@@ -75,12 +101,12 @@ const filtrar= (data,filtro) => {
 
 const ordenar= (data, orden) =>{
     if(orden == "precioCreciente"){
-        data.sort((a,b)=> a.precio - b.precio)
+        data.sort((a,b)=> (a.precio- a.precio*a.descuento) - (b.precio - b.precio*b.descuento))
         localStorage.setItem("orden","precioCreciente")
         
     }
     if(orden == "precioDecreciente"){
-        data.sort((a,b)=> a.precio - b.precio)
+        data.sort((a,b)=> (a.precio- a.precio*a.descuento) - (b.precio - b.precio*b.descuento))
         data.reverse()
         localStorage.setItem("orden","precioDecreciente")
 
