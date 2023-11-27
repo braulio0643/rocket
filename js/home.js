@@ -1,6 +1,9 @@
 fetch("js/productos.json")
     .then(response => response.json())
     .then(data => {
+        data.forEach((element)=>{
+            element.img.slice(1)
+        })
         const containerProductos = document.querySelector(".categoriaHome")
         let dataFinal = data.filter((producto)=>producto.descuento>0)
         dataFinal.reduce((acc, elemento)=>{
