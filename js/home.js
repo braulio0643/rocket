@@ -3,13 +3,17 @@ fetch("js/productos.json")
     .then(data => {
         const containerProductos = document.querySelector(".categoriaHome")
         let dataFinal = data.filter((producto)=>producto.descuento>0)
+        dataFinal.forEach((elemento)=>{
+            console.log(elemento.img.slice(1))
+            elemento.img = elemento.img.slice(1)
+        })
         dataFinal.reduce((acc, elemento)=>{
             return acc + `
             <div class = "producto">
                 <h3 class="centrado">${elemento.nombre}</h3>
             
                 <div class="container-img">
-                    <img class="centrado" src=${elemento.img.slice(1)} alt=${elemento.nombre}>
+                    <img class="centrado" src=${elemento.img} alt=${elemento.nombre}>
                 </div>
             
                 <div class= "precio-en-descuento"> 
